@@ -12,7 +12,6 @@ catalog = [phon1, phon2, phon3, phon4, phon5]
 
 l=len(catalog)
 i=0
-
 for i in range (0,l,1):
     #i=i+1
     phon=catalog[i]

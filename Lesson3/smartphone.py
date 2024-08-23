@@ -9,5 +9,3 @@ class Smartphone:
         print("Marka ", self.marka, end=' '), print("Model ", self.model,end=' '), print("Number ", self.number)
 
 
-sumsung = Smartphone ("Sumsung", "M-555", "+79001234567")
-sumsung.PrintName()
