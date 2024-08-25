@@ -87,3 +87,4 @@ xdiagnose==3.8.10
 xkit==0.0.0
 xlrd==1.2.0
 zipp==1.0.0
+pytest==8.3.2 
