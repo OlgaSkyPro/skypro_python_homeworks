@@ -1,1 +1,1 @@
-print ("Lesson6")
+print("Lesson6")
