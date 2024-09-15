@@ -68,5 +68,4 @@ field_company_color = driver.find_element(By.CSS_SELECTOR, "#company.alert.py-2.
 assert field_company_color.is_displayed()
 
 print("OK")
-
 driver.quit()

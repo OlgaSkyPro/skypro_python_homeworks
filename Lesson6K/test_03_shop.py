@@ -52,8 +52,7 @@ input_field_continue.click()
 total_price = driver.find_element(By.CSS_SELECTOR, '[data-test="total-label"]').text
 assert total_price == "Total: $58.29"
 
-print("OK")
-
 print(total_price)
+print("OK")
 
 driver.quit()

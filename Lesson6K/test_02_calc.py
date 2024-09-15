@@ -28,8 +28,8 @@ rezult = driver.find_element(By.CLASS_NAME, "screen").text
 
 assert rezult == "15"
 
-print(rezult)
-
 print("OK")
+
+print(rezult)
 
 driver.quit()
