@@ -2,8 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from time import sleep
-
 
 driver = webdriver.Chrome()
 driver.get(" https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
@@ -26,11 +24,12 @@ input_field_equel.click()
 
 wait = WebDriverWait(driver, 46).until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"), "15"))
 
-rezult = driver.find_element(By.CLASS_NAME,"screen").text
+rezult = driver.find_element(By.CLASS_NAME, "screen").text
 
 assert rezult == "15"
 
 print(rezult)
+
 print("OK")
 
 driver.quit()
