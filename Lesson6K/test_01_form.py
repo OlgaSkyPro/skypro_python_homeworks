@@ -1,7 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from time import sleep
-
 
 driver = webdriver.Chrome()
 driver.get("https://bonigarcia.dev/selenium-webdriver-java/data-types.html")
@@ -35,7 +33,6 @@ input_field_company.send_keys("SkyPro")
 
 submit_button = driver.find_element(By.CSS_SELECTOR, "button[type='submit']")
 submit_button.click()
-sleep(2)
 
 zip_cod_color = driver.find_element(By.CSS_SELECTOR, "#zip-code.alert.py-2.alert-danger")
 assert zip_cod_color.is_displayed()
