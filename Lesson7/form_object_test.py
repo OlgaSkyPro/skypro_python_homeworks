@@ -41,4 +41,4 @@ def test_fill_form():
     assert to_be9 == True
     assert to_be10 == True
 
-    browser.quit
+    browser.quit()

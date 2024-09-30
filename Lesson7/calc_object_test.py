@@ -17,4 +17,4 @@ def calc():
 
     assert to_be == "15"
 
-    browser.quit
+    browser.quit()

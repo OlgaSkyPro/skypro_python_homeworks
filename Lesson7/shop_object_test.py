@@ -13,11 +13,11 @@ browser = webdriver.Chrome(
 def shop():
     browser = webdriver.Chrome()
     shop_login = ShopLogin(browser)
-    shop_choice = ShopLogin(browser)
+    shop_choice = ShopChoice(browser)
     shop_card = ShopCard(browser)
 
     to_be = shop_card.finish()
 
     assert to_be == "Total: $58.29"
 
-    browser.quit
+    browser.quit()
