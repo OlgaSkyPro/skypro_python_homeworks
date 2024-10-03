@@ -96,4 +96,23 @@ def change_worker():
     
     return resp.json()
 
+def test_negative_add_new_worker():
+    resp = requests.get(base_url+'/employee')
+    body = resp.json()
+        
+    firstname = ""
+    lastname = "Иванов"
+    middlename = "Иванович"
+    companyid = 506
+    email = "ivan@string.com"
+    url = "Ivan@string.ru"
+    phone = "+019995055"
+    birthdate = "1960-10-02T13:09:21.602Z"
+    isactive = True
+    
+    result = create_worker(firstname,lastname, middlename, companyid, email, url, phone, birthdate, isactive)
+    new_id = result["id"]
+    
+    assert resp.status_code == 404
+
 
