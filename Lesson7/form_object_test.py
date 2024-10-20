@@ -17,7 +17,7 @@ def test_fill_form():
     open_page = FormOpenPage(browser)
 
     result_page = FormResultPage(browser)
-
+    
     color_page = FormColorPage(browser)
     to_be1 = color_page.empty_field(browser)
     to_be2 = color_page.filled_field_name(browser)
